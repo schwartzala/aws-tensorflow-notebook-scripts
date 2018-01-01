@@ -1,28 +1,27 @@
 # aws-tensorflow-notebook-scripts
 Scripts to setup Tensorflow on AWS Instances.
 
-## Install Tensorflow Notebook on RHEL7 Machine
+## Setting up AWS CLI and spinning up an AWS AMI Machine
+
+A lot of this was borrowed from [this](http://max-likelihood.com/2016/06/18/aws-tensorflow-setup/) guide. I have made some adjustments to allow it to make use of the AWS Free-Tier in order to avoid charges. Since we're just trying to get a Tensorflow Notebook up and running, we just use a light machine.
 
 ```
-# Install "wget"  
-sudo yum install wget
+# Download the AWS CLI Installation and Machine Setup Script.
+wget https://raw.githubusercontent.com/schwartzala/aws-tensorflow-notebook-scripts/master/setup-awscli.sh
 
-# Download the RHEL 7 Notebook Script  
-wget https://raw.githubusercontent.com/schwartzala/aws-tensorflow-notebook-scripts/master/rhel7_nb.sh
+# Set Permissions
+chmod +777 setup-awscli.sh
 
-# Set Permissions  
-chmod +777 rhel7_nb.sh
+# Read the Script and be aware of any manual steps you have to do.
+cat ./setup-awscli.sh
 
 # Run the Script
-./rhel7_nb.sh
+./setup-awscli.sh
 ```
 
 ## Install Tensorflow Noteboook on AWS AMI Machine
 
 ```
-# Install "wget"  
-sudo yum install wget
-
 # Download the RHEL 7 Notebook Script  
 wget https://raw.githubusercontent.com/schwartzala/aws-tensorflow-notebook-scripts/master/awsami_nb.sh
 
@@ -31,6 +30,19 @@ chmod +777 awsami_nb.sh
 
 # Run the Script  
 ./awsami_nb.sh
+```
+
+## Install Tensorflow Notebook on RHEL7 Machine
+
+```
+# Download the RHEL 7 Notebook Script  
+wget https://raw.githubusercontent.com/schwartzala/aws-tensorflow-notebook-scripts/master/rhel7_nb.sh
+
+# Set Permissions  
+chmod +777 rhel7_nb.sh
+
+# Run the Script
+./rhel7_nb.sh
 ```
 
 You should now be able to access your notebook from your browser.
