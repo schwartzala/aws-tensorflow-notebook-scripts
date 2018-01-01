@@ -32,7 +32,9 @@ chmod +777 awsami_nb.sh
 ./awsami_nb.sh
 ```
 
-## Install Tensorflow Notebook on RHEL7 Machine
+## (Alternative) Install Tensorflow Notebook on RHEL7 Machine
+
+I do not provide a guide to setting up a RHEL7 box, but RHEL7 may be more familiar to you. If it is, use this script.
 
 ```
 # Download the RHEL 7 Notebook Script  
