@@ -3,30 +3,30 @@ Scripts to setup Tensorflow on AWS Instances.
 
 ## Install Tensorflow Notebook on RHEL7 Machine
 
-Install "wget" 
+Install "wget"  
 ```sudo yum install wget```
 
-Download the RHEL 7 Notebook Script
+Download the RHEL 7 Notebook Script  
 ```wget https://raw.githubusercontent.com/schwartzala/aws-tensorflow-notebook-scripts/master/rhel7_nb.sh```
 
-Set Permissions
+Set Permissions  
 ```chmod +777 rhel7_nb.sh```
 
-Run the Script
+Run the Script  
 ```./rhel7_nb.sh```
 
 ## Install Tensorflow Noteboook on AWS AMI Machine
 
-Install "wget" 
+Install "wget"  
 ```sudo yum install wget```
 
-Download the RHEL 7 Notebook Script
+Download the RHEL 7 Notebook Script  
 ```wget https://raw.githubusercontent.com/schwartzala/aws-tensorflow-notebook-scripts/master/awsami_nb.sh```
 
-Set Permissions
+Set Permissions  
 ```chmod +777 awsami_nb.sh```
 
-Run the Script
+Run the Script  
 ```./awsami_nb.sh```
 
 You should now be able to access your notebook from your browser.
