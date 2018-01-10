@@ -34,6 +34,10 @@ aws ec2 run-instances --image-id ami-55ef662f \
 	--key-name my_aws_key \
 	--security-groups my-sg
 
+alias aws_get_ip='aws ec2 describe-instances --query "Reservations[*].Instances[*].PublicIpAddress" --output=text'
+
+aws_get_ip
+
 # SSH to Node
 # ssh -i ~/.aws/my_aws_key.pem ec2-user@<instance IP>
 
