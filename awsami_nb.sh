@@ -24,7 +24,7 @@ docker
 sudo service docker start
 
 # Get the Tenserflow Notebook Docker Image
-docker pull jupyter/tensorflow-notebook
+sudo docker pull jupyter/tensorflow-notebook
 
 # Run the Docker image 
-docker run -it --rm -p 8888:8888 jupyter/tensorflow-notebook
+sudo docker run -it --rm -p 8888:8888 jupyter/tensorflow-notebook
