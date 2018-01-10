@@ -5,16 +5,16 @@
 # Execute the script: ./awsami_nb.sh
 
 # Update yum
-sudo yum update
+sudo yum -y update
 
 # Remove any old Docker Installations
-sudo yum remove docker docker-common docker-selinux docker-engine
+sudo yum -y remove docker docker-common docker-selinux docker-engine
 
 # Add the Docker Repo to yum
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 # Install Docker Community Edition
-sudo yum install docker
+sudo yum -y install docker
 
 # Check your Docker installation was successful
 docker
